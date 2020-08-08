@@ -1,4 +1,4 @@
 # My-Week-end-products
-## This repo  useful contains general purpose products built by me for people during free time on weekends.
+## This repo  contains useful general purpose products built by me for people during free time on weekends.
 
 
