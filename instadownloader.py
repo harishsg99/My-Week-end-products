@@ -136,7 +136,7 @@ if connection() == True:
         while True:
             a = "Press 'A' to download an instagram profile picture.\nPress 'B' to download an instagram photo or video.\nPress 'Q' to exit."
             print(a)
-            select = str(input("\nInstaSave > ")).upper()
+            select = str(input("\nInstaDownloader > ")).upper()
             try:
                 if select == 'A':
                     pp_download()
