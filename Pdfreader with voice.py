@@ -4,8 +4,8 @@ import pytesseract
 from wand.image import Image as wi
 import pyttsx3
 import SpeechRecognition  as sr
-
-
+import sys
+input = sys.argv[1]
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
 #print(voices[1].id)
@@ -18,7 +18,7 @@ def speak(audio):
 
 pytesseract.pytesseract.tesseract_cmd = r"C:\\Program Files\\Tesseract-OCR\tesseract.exe" #Path to the tesseract 
 
-pdf = wi(filename = "sample.pdf", resolution = 300)
+pdf = wi(filename = input, resolution = 300)
 pdfImage = pdf.convert('jpeg')
 
 imageBlobs = []
